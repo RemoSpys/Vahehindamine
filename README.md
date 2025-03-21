@@ -25,7 +25,7 @@ Vahehindamine on lihtne ja puhas HTML/CSS veebileht, mis sisaldab ajakirja stiil
 Kuna tegu on staatilise HTML/CSS projektiga, ava lihtsalt soovitud `.html` fail veebibrauseris või kasuta kohalikku serverit (näiteks Live Server VSCode'is).
 
 ## Live lehekülg
-[Vercel lingi saad lisada siia]
+- Live link: [Vercel Link](https://vahehindamine-i8jqdfd03-remospys-projects.vercel.app/)
 
 ## Autor
 - Remo Spys
