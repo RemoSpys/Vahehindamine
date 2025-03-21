@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "public": false,
+    "routes": [
+      { "src": "/(.*)", "dest": "/src/home/$1" },
+      { "src": "/", "dest": "/src/home/index.html" }
+    ]
+  }
+  
