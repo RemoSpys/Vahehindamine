@@ -2,14 +2,31 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #ffffff;
 }
 
-.page-title-container {
+.main-title h1 {
     display: flex;
     justify-content: center;
-    padding: 60px 20px 0;
-    background-color: #ffffff;
+    font-size: 240px;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+    .main-title h1 {
+        font-size: 80px;
+    }
+}
+@media (max-width: 768px) {
+    .main-title h1 {
+        font-size: 50px;
+    }
+}
+@media (max-width: 480px) {
+    .main-title h1 {
+        font-size: 60px;
+    }
 }
 
 .page-title {
@@ -25,7 +42,6 @@ body {
     padding: 80px 0 40px;
     display: flex;
     justify-content: center;
-    background-color: #ffffff;
 }
 
 .authors-container {
@@ -38,8 +54,9 @@ body {
 
 .author-item {
     display: flex;
+    align-items: center;
     position: relative;
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid #eee;
     padding: 40px 0;
     transition: transform 0.3s ease;
 }
@@ -53,6 +70,7 @@ body {
     height: 80px;
     border-radius: 50%;
     overflow: hidden;
+    flex-shrink: 0;
 }
 
 .author-image {
@@ -62,39 +80,39 @@ body {
 }
 
 .author-content {
-    flex: 1;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 40px;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding-left: 30px;
 }
 
 .author-name {
     font-size: 24px;
     font-weight: bold;
-    margin: 0 0 15px 0;
+    margin: 0;
     color: #000;
+    flex: 1;
 }
 
 .author-meta {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
 
 .meta-item {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 5px;
+    font-size: 14px;
 }
 
 .meta-label {
-    font-size: 14px;
     color: #666;
 }
 
 .meta-value {
-    font-size: 14px;
     color: #000;
 }
 
@@ -105,8 +123,9 @@ body {
     font-weight: bold;
     text-decoration: none;
     color: #000;
+    margin-left: 20px;
+    white-space: nowrap;
     transition: color 0.3s ease;
-    margin-left: auto;
 }
 
 .about-button:hover {
@@ -117,6 +136,35 @@ body {
     font-size: 18px;
     margin-left: 5px;
 }
+
+/* Responsive adjustments */
+@media (max-width: 920px) {
+    .author-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 0;
+    }
+
+    .author-content {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+        margin-top: 15px;
+        gap: 15px;
+    }
+
+    .author-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .about-button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
 
 .newsletter-section {
     background-color: #000;
