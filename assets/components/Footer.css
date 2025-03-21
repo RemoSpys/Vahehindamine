@@ -25,8 +25,13 @@ a {
 }
 
 @keyframes scrollText {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .footer {
@@ -154,11 +159,11 @@ a {
     .container {
         padding: 0 60px;
     }
-    
+
     .footer-headline h1 {
         font-size: 60px;
     }
-    
+
     .footer-links {
         gap: 80px;
     }
@@ -168,23 +173,23 @@ a {
     .container {
         padding: 0 40px;
     }
-    
+
     .footer-headline h1 {
         font-size: 48px;
     }
-    
+
     .footer-main {
         flex-direction: column;
         align-items: flex-start;
         gap: 40px;
         margin-bottom: 80px;
     }
-    
+
     .newsletter-signup {
         width: 100%;
         min-width: unset;
     }
-    
+
     .footer-links {
         gap: 60px;
     }
@@ -194,23 +199,23 @@ a {
     .container {
         padding: 0 20px;
     }
-    
+
     .footer-headline h1 {
         font-size: 36px;
     }
-    
+
     .footer-nav {
         flex-direction: column;
         gap: 40px;
         margin-bottom: 80px;
     }
-    
+
     .footer-links {
         flex-direction: column;
         gap: 40px;
         margin-top: 30px;
     }
-    
+
     .footer-bottom {
         flex-direction: column;
         gap: 30px;
@@ -222,12 +227,12 @@ a {
     .footer-headline h1 {
         font-size: 32px;
     }
-    
+
     .newsletter-signup {
         flex-direction: column;
         gap: 10px;
     }
-    
+
     .newsletter-signup button {
         width: 100%;
     }

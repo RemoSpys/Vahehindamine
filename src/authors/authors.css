@@ -18,11 +18,13 @@ body {
         font-size: 80px;
     }
 }
+
 @media (max-width: 768px) {
     .main-title h1 {
         font-size: 50px;
     }
 }
+
 @media (max-width: 480px) {
     .main-title h1 {
         font-size: 60px;
@@ -137,7 +139,6 @@ body {
     margin-left: 5px;
 }
 
-/* Responsive adjustments */
 @media (max-width: 920px) {
     .author-item {
         flex-direction: column;
@@ -185,8 +186,13 @@ body {
 }
 
 @keyframes scroll-text {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .newsletter-label {
@@ -246,34 +252,34 @@ body {
     .page-title {
         font-size: 60px;
     }
-    
+
     .author-item {
         flex-direction: column;
         padding: 30px 0;
     }
-    
+
     .author-content {
         padding-left: 0;
         margin-top: 20px;
     }
-    
+
     .author-meta {
         flex-direction: column;
         align-items: flex-start;
         gap: 15px;
     }
-    
+
     .about-button {
         margin-left: 0;
         margin-top: 15px;
     }
-    
+
     .newsletter-content {
         flex-direction: column;
         align-items: flex-start;
         gap: 30px;
     }
-    
+
     .newsletter-title {
         font-size: 32px;
     }
@@ -283,20 +289,20 @@ body {
     .page-title {
         font-size: 40px;
     }
-    
+
     .author-name {
         font-size: 20px;
     }
-    
+
     .newsletter-title {
         font-size: 24px;
     }
-    
+
     .newsletter-form {
         flex-direction: column;
         width: 100%;
     }
-    
+
     .newsletter-input {
         width: 100%;
     }

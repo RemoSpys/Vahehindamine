@@ -162,9 +162,13 @@ Nec feugiat in fermentum posuere urna nec tincidunt praesent semper. Aliquam nul
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header-container').innerHTML = data;
+
+                const script = document.createElement('script');
+                script.src = '/assets/components/header.js';
+                script.onload = () => initHeaderMenu();
+                document.body.appendChild(script);
             })
             .catch(error => console.error('Error loading header:', error));
-
         fetch('/assets/components/Footer.html')
             .then(response => response.text())
             .then(data => {

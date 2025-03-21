@@ -5,7 +5,8 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
-html, body {
+html,
+body {
     overflow-x: hidden;
     width: 100%;
 }
@@ -93,18 +94,18 @@ nav a {
 }
 
 .article-category {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 5px 15px;
-        font-size: 12px;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: #000;
-        border: 2px solid #000;
-        border-radius: 20px;
-        text-decoration: none;
-        transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 15px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 .article-image {
@@ -159,6 +160,7 @@ nav a {
     .main-title h1 {
         font-size: 60px;
     }
+
     .articles-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -168,6 +170,7 @@ nav a {
     .main-title h1 {
         font-size: 60px;
     }
+
     .articles-grid {
         grid-template-columns: 1fr;
     }

@@ -127,7 +127,6 @@ body {
     font-size: 18px;
 }
 
-/* Responsive styles */
 @media (max-width: 1024px) {
     .podcast-info {
         margin-top: 15px;

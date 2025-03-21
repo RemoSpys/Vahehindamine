@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,11 @@
     <link rel="stylesheet" href="/assets/components/Header.html">
     <link rel="stylesheet" href="authorpost.css">
 </head>
-<body>
-        <div id="header-container"></div>
 
-    <div class="container">       
+<body>
+    <div id="header-container"></div>
+
+    <div class="container">
         <section class="author-profile">
             <div class="author-profiles">
                 <div class="author-image-container">
@@ -26,29 +28,31 @@
                     </div>
                 </div>
             </div>
-            
-            
+
+
             <div class="author-info">
                 <h1 class="author-name">LOUISE JENSEN</h1>
-        
-                
-        
+
+
+
                 <h3 class="author-bio">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare
                     arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut.
                     Porttitor leo a diam.
                 </h3>
-        
+
                 <p class="author-bio-extended">
-                    Porttitor rhoncus dolor purus non enim praesent elementum. Eget dolor morbi non arcu risus quis varius.
-                    Posuere ac ut consequat semper viverra nam libero. In ornare quam viverra orci sagittis eu. Tristique risus
+                    Porttitor rhoncus dolor purus non enim praesent elementum. Eget dolor morbi non arcu risus quis
+                    varius.
+                    Posuere ac ut consequat semper viverra nam libero. In ornare quam viverra orci sagittis eu.
+                    Tristique risus
                     nec feugiat in fermentum posuere urna nec. Tempus quam pellentesque nec nam aliquam sem et.
                     Convallis a cras semper auctor neque vitae tempus quam pellentesque.
                 </p>
             </div>
         </section>
-        
+
 
         <div class="divider"></div>
 
@@ -69,7 +73,7 @@
                         </div>
                     </div>
                 </article>
-        
+
                 <article class="article-card">
                     <div class="article-image">
                         <img src="/assets/images/anindestructiblehope.png" alt="The chains of our lives">
@@ -84,7 +88,7 @@
                         </div>
                     </div>
                 </article>
-        
+
                 <article class="article-card">
                     <div class="article-image">
                         <img src="/assets/images/throughtheeyesofstreetartists.png" alt="Keep on smiling">
@@ -99,7 +103,7 @@
                         </div>
                     </div>
                 </article>
-        
+
                 <article class="article-card">
                     <div class="article-image">
                         <img src="/assets/images/magazine/keeponsmiling.png" alt="Art and emotions">
@@ -116,24 +120,29 @@
                 </article>
             </div>
         </section>
-        
-    </div>
-        <div id="footer-container"></div>
 
-        <script>
-            fetch('/assets/components/Header.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('header-container').innerHTML = data;
-                })
-                .catch(error => console.error('Error loading header:', error));
-    
-            fetch('/assets/components/Footer.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('footer-container').innerHTML = data;
-                })
-                .catch(error => console.error('Error loading footer:', error));
-        </script>
+    </div>
+    <div id="footer-container"></div>
+
+    <script>
+        fetch('/assets/components/Header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+
+                const script = document.createElement('script');
+                script.src = '/assets/components/header.js';
+                script.onload = () => initHeaderMenu();
+                document.body.appendChild(script);
+            })
+            .catch(error => console.error('Error loading header:', error));
+        fetch('/assets/components/Footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
 </body>
+
 </html>

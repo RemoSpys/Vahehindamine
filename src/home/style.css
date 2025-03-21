@@ -16,7 +16,12 @@
             padding: 0 15px;
         }
 
-        h1, h2, h3, h4, h5, h6 {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             font-weight: 700;
             line-height: 1.2;
         }
@@ -114,8 +119,13 @@
         }
 
         @keyframes ticker-scroll {
-            0% { transform: translateX(100%); }
-            100% { transform: translateX(-100%); }
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
         }
 
         .section-header {
@@ -489,7 +499,7 @@
             text-align: center;
             margin-top: 40px;
             padding-top: 20px;
-        } 
+        }
 
         .view-all-articles-btn {
             margin-top: 40px;
@@ -629,11 +639,11 @@
             .main-title h1 {
                 font-size: 80px;
             }
-            
+
             .section-header h2 {
                 font-size: 60px;
             }
-            
+
             .lead-article .headline {
                 font-size: 60px;
             }
@@ -643,11 +653,11 @@
             .podcast-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
-            
+
             .authors-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .author-card:nth-child(odd) {
                 border-right: none;
             }
@@ -678,23 +688,23 @@
             .main-title h1 {
                 font-size: 50px;
             }
-            
+
             .section-header h2 {
                 font-size: 40px;
             }
-            
+
             .podcast-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .articles-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .main-articles {
                 border-right: none;
             }
-            
+
             .lead-article .headline {
                 font-size: 40px;
             }
@@ -704,11 +714,11 @@
                 align-items: flex-start;
                 gap: 10px;
             }
-            
+
             .article-card {
                 flex-direction: column;
             }
-            
+
             .article-image {
                 width: 100%;
                 margin-right: 0;
@@ -720,15 +730,15 @@
             .main-title h1 {
                 font-size: 60px;
             }
-            
+
             .section-header h2 {
                 font-size: 30px;
             }
-            
+
             .author-card {
                 padding: 15px;
             }
-            
+
             .lead-article .headline {
                 font-size: 30px;
             }

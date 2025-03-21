@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,9 @@
     <link rel="stylesheet" href="authors.css">
     <link rel="stylesheet" href="/assets/components/Footer.css">
     <link rel="stylesheet" href="/assets/components/Header.css">
+
 </head>
+
 <body>
     <div id="header-container"></div>
 
@@ -32,9 +35,10 @@
                             <span class="meta-label">City:</span>
                             <span class="meta-value">Berlin</span>
                         </div>
-                        <a href="/src/authorpost/authorpost.html" class="about-button">ABOUT <span class="arrow">→</span></a>
+                        <a href="/src/authorpost/authorpost.html" class="about-button">ABOUT <span
+                                class="arrow">→</span></a>
                     </div>
-                    
+
                 </div>
             </div>
             <div class="author-item">
@@ -52,11 +56,12 @@
                             <span class="meta-label">City</span>
                             <span class="meta-value">Berlin</span>
                         </div>
-                        <a href="/src/authorpost/authorpost.html" class="about-button">ABOUT <span class="arrow">→</span></a>
+                        <a href="/src/authorpost/authorpost.html" class="about-button">ABOUT <span
+                                class="arrow">→</span></a>
                     </div>
                 </div>
             </div>
-            
+
             <div class="author-item">
                 <div class="author-image-container">
                     <img src="/assets/images/Anne Henry.png" alt="Anne Henry" class="author-image">
@@ -72,11 +77,12 @@
                             <span class="meta-label">City</span>
                             <span class="meta-value">Berlin</span>
                         </div>
-                        <a href="/src/authorpost/authorpost.html" class="about-button">ABOUT <span class="arrow">→</span></a>
+                        <a href="/src/authorpost/authorpost.html" class="about-button">ABOUT <span
+                                class="arrow">→</span></a>
                     </div>
                 </div>
             </div>
-            
+
             <div class="author-item">
                 <div class="author-image-container">
                     <img src="/assets/images/Anna Nielsen.png" alt="Jakob Grønberg" class="author-image">
@@ -92,12 +98,13 @@
                             <span class="meta-label">City</span>
                             <span class="meta-value">Berlin</span>
                         </div>
-                        <a href="/src/authorpost/authorpost.html" class="about-button">ABOUT <span class="arrow">→</span></a>
+                        <a href="/src/authorpost/authorpost.html" class="about-button">ABOUT <span
+                                class="arrow">→</span></a>
                     </div>
                 </div>
             </div>
-            
- <div class="author-item">
+
+            <div class="author-item">
                 <div class="author-image-container">
                     <img src="/assets/images/Jane Cooper.png" alt="Jakob Grønberg" class="author-image">
                 </div>
@@ -112,11 +119,12 @@
                             <span class="meta-label">City</span>
                             <span class="meta-value">Berlin</span>
                         </div>
-                        <a href="/src/authorpost/authorpost.html" class="about-button">ABOUT <span class="arrow">→</span></a>
+                        <a href="/src/authorpost/authorpost.html" class="about-button">ABOUT <span
+                                class="arrow">→</span></a>
                     </div>
                 </div>
             </div>
-            
+
             <div class="author-item">
                 <div class="author-image-container">
                     <img src="/assets/images/Cristofer Vaccaro.png" alt="Cristofer Vaccaro" class="author-image">
@@ -132,7 +140,8 @@
                             <span class="meta-label">City</span>
                             <span class="meta-value">Berlin</span>
                         </div>
-                        <a href="/src/authorpost/authorpost.html" class="about-button">ABOUT <span class="arrow">→</span></a>
+                        <a href="/src/authorpost/authorpost.html" class="about-button">ABOUT <span
+                                class="arrow">→</span></a>
                     </div>
                 </div>
             </div>
@@ -146,9 +155,13 @@
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header-container').innerHTML = data;
+
+                const script = document.createElement('script');
+                script.src = '/assets/components/header.js';
+                script.onload = () => initHeaderMenu();
+                document.body.appendChild(script);
             })
             .catch(error => console.error('Error loading header:', error));
-
         fetch('/assets/components/Footer.html')
             .then(response => response.text())
             .then(data => {
@@ -157,4 +170,5 @@
             .catch(error => console.error('Error loading footer:', error));
     </script>
 </body>
+
 </html>

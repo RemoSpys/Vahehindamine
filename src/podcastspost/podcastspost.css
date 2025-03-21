@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px; /* adds padding around the content */
+    padding: 15px 20px;
     margin: 20px 0;
 }
 
@@ -22,10 +22,9 @@
 .section-indicator h1 {
     font-size: 20px;
     font-weight: bold;
-    margin: 0; /* remove default margin from h1 */
+    margin: 0;
 }
 
-/* Responsive adjustments */
 @media (max-width: 600px) {
     .back-section {
         flex-direction: column;
