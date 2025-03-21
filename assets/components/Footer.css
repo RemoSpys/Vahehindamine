@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.newsletter-banner {
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+    padding: 10px 0;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.newsletter-repeating-text {
+    font-size: 18px;
+    font-weight: bold;
+    animation: scrollText 30s linear infinite;
+}
+
+@keyframes scrollText {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 80px 0 40px;
+    width: 100%;
+    gap: 80px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.footer-headline h1 {
+    font-size: 74px;
+    font-weight: 800;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.newsletter-signup {
+    display: flex;
+    min-width: 400px;
+}
+
+.newsletter-signup input {
+    flex: 1;
+    padding: 16px 20px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    height: 56px;
+}
+
+.newsletter-signup button {
+    padding: 16px 30px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    height: 56px;
+}
+
+.newsletter-signup button:hover {
+    background-color: #f0f0f0;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+
+.footer-branding h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    gap: 120px;
+}
+
+.footer-links-column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-links-column a {
+    font-size: 17px;
+    transition: opacity 0.2s;
+}
+
+.footer-links-column a:hover {
+    opacity: 0.7;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #333;
+    padding-top: 40px;
+}
+
+.footer-credits {
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.footer-social {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-social a {
+    font-size: 20px;
+    transition: opacity 0.2s;
+}
+
+.footer-social a:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 60px;
+    }
+    
+    .footer-headline h1 {
+        font-size: 60px;
+    }
+    
+    .footer-links {
+        gap: 80px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        padding: 0 40px;
+    }
+    
+    .footer-headline h1 {
+        font-size: 48px;
+    }
+    
+    .footer-main {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+        margin-bottom: 80px;
+    }
+    
+    .newsletter-signup {
+        width: 100%;
+        min-width: unset;
+    }
+    
+    .footer-links {
+        gap: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    .footer-headline h1 {
+        font-size: 36px;
+    }
+    
+    .footer-nav {
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 80px;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 30px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-headline h1 {
+        font-size: 32px;
+    }
+    
+    .newsletter-signup {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .newsletter-signup button {
+        width: 100%;
+    }
+}

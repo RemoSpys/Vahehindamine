@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcasts - FYRRE MAGAZINE</title>
+    <link rel="stylesheet" href="podcastspost.css">
+    <link rel="stylesheet" href="/assets/components/Footer.css">
+    <link rel="stylesheet" href="/assets/components/Header.css">
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <div class="page-title-container">
+        <h1 class="page-title">PODCAST</h1>
+    </div>
+
+    <section class="podcast-section">
+        <div class="podcast-container">
+            <div class="podcast-item">
+                <div class="episode-number">05</div>
+                <img src="/assets/images/podcast-cover (1).png" alt="Podcast Episode 05" class="podcast-image">
+                <div class="podcast-content">
+                    <h2 class="podcast-title">The Problem of today's cultural development</h2>
+                    <div class="podcast-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Date</span>
+                            <span class="meta-value">16 March 2022</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Duration</span>
+                            <span class="meta-value">1hr 20min</span>
+                        </div>
+                        <a href="#" class="listen-button">LISTEN <span class="arrow">→</span></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="podcast-item">
+                <div class="episode-number">04</div>
+                <img src="/assets/images/podcast-cover (2).png" alt="Podcast Episode 04" class="podcast-image">
+                <div class="podcast-content">
+                    <h2 class="podcast-title">The hidden messages of Jack Nielson</h2>
+                    <div class="podcast-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Date</span>
+                            <span class="meta-value">10 March 2022</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Duration</span>
+                            <span class="meta-value">1hr 20min</span>
+                        </div>
+                        <a href="#" class="listen-button">LISTEN <span class="arrow">→</span></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="podcast-item">
+                <div class="episode-number">03</div>
+                <img src="/assets/images/podcast-cover (3).png" alt="Podcast Episode 03" class="podcast-image">
+                <div class="podcast-content">
+                    <h2 class="podcast-title">Behind the scenes of the street art culture</h2>
+                    <div class="podcast-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Date</span>
+                            <span class="meta-value">05 March 2022</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Duration</span>
+                            <span class="meta-value">1hr 20min</span>
+                        </div>
+                        <a href="#" class="listen-button">LISTEN <span class="arrow">→</span></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="podcast-item">
+                <div class="episode-number">02</div>
+                <img src="/assets/images/podcast-cover (4).png" alt="Podcast Episode 02" class="podcast-image">
+                <div class="podcast-content">
+                    <h2 class="podcast-title">The art of movement</h2>
+                    <div class="podcast-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Date</span>
+                            <span class="meta-value">28 Feb 2022</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Duration</span>
+                            <span class="meta-value">1hr 20min</span>
+                        </div>
+                        <a href="#" class="listen-button">LISTEN <span class="arrow">→</span></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="podcast-item">
+                <div class="episode-number">01</div>
+                <img src="/assets/images/podcast-cover (5).png" alt="Podcast Episode 01" class="podcast-image">
+                <div class="podcast-content">
+                    <h2 class="podcast-title">10 artists your should definitely know</h2>
+                    <div class="podcast-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Date</span>
+                            <span class="meta-value">20 Feb 2022</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Duration</span>
+                            <span class="meta-value">1hr 20min</span>
+                        </div>
+                        <a href="#" class="listen-button">LISTEN <span class="arrow">→</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script>
+        fetch('/assets/components/Header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header:', error));
+
+        fetch('/assets/components/Footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
+</body>
+</html>

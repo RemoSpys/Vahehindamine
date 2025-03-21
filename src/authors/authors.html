@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authors - FYRRE MAGAZINE</title>
+    <link rel="stylesheet" href="authors.css">
+    <link rel="stylesheet" href="/assets/components/Footer.css">
+    <link rel="stylesheet" href="/assets/components/Header.css">
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <div class="page-title-container">
+        <h1 class="page-title">AUTHORS</h1>
+    </div>
+
+    <section class="authors-section">
+        <div class="authors-container">
+            <div class="author-item">
+                <div class="author-image-container">
+                    <img src="/assets/images/image (8).png" alt="Jakob Grønberg" class="author-image">
+                </div>
+                <div class="author-content">
+                    <h2 class="author-name">Jakob Grønberg</h2>
+                    <div class="author-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Job</span>
+                            <span class="meta-value">Artist</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">City</span>
+                            <span class="meta-value">Berlin</span>
+                        </div>
+                        <a href="#" class="about-button">ABOUT <span class="arrow">→</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="author-item">
+                <div class="author-image-container">
+                    <img src="/assets/images/image (8).png" alt="Jakob Grønberg" class="author-image">
+                </div>
+                <div class="author-content">
+                    <h2 class="author-name">Jakob Grønberg</h2>
+                    <div class="author-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Job</span>
+                            <span class="meta-value">Artist</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">City</span>
+                            <span class="meta-value">Berlin</span>
+                        </div>
+                        <a href="#" class="about-button">ABOUT <span class="arrow">→</span></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="author-item">
+                <div class="author-image-container">
+                    <img src="/assets/images/image (7).png" alt="Anne Henry" class="author-image">
+                </div>
+                <div class="author-content">
+                    <h2 class="author-name">Anne Henry</h2>
+                    <div class="author-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Job</span>
+                            <span class="meta-value">Artist</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">City</span>
+                            <span class="meta-value">Berlin</span>
+                        </div>
+                        <a href="#" class="about-button">ABOUT <span class="arrow">→</span></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="author-item">
+                <div class="author-image-container">
+                    <img src="/assets/images/image (8).png" alt="Jakob Grønberg" class="author-image">
+                </div>
+                <div class="author-content">
+                    <h2 class="author-name">Jakob Grønberg</h2>
+                    <div class="author-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Job</span>
+                            <span class="meta-value">Artist</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">City</span>
+                            <span class="meta-value">Berlin</span>
+                        </div>
+                        <a href="#" class="about-button">ABOUT <span class="arrow">→</span></a>
+                    </div>
+                </div>
+            </div>
+            
+ <div class="author-item">
+                <div class="author-image-container">
+                    <img src="/assets/images/image (8).png" alt="Jakob Grønberg" class="author-image">
+                </div>
+                <div class="author-content">
+                    <h2 class="author-name">Jakob Grønberg</h2>
+                    <div class="author-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Job</span>
+                            <span class="meta-value">Artist</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">City</span>
+                            <span class="meta-value">Berlin</span>
+                        </div>
+                        <a href="#" class="about-button">ABOUT <span class="arrow">→</span></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="author-item">
+                <div class="author-image-container">
+                    <img src="/assets/images/image (6).png" alt="Cristofer Vaccaro" class="author-image">
+                </div>
+                <div class="author-content">
+                    <h2 class="author-name">Cristofer Vaccaro</h2>
+                    <div class="author-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Job</span>
+                            <span class="meta-value">Artist</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">City</span>
+                            <span class="meta-value">Berlin</span>
+                        </div>
+                        <a href="#" class="about-button">ABOUT <span class="arrow">→</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script>
+        fetch('/assets/components/Header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header:', error));
+
+        fetch('/assets/components/Footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
+</body>
+</html>

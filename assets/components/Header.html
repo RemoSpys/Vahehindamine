@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FYRRE MAGAZINE</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            background-color: #f5f5f5;
+        }
+        
+        .site-header {
+            width: 100%;
+            padding: 20px;
+            background: #fff;
+            position: relative;
+            z-index: 1000;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        nav a {
+            font-size: 16px;
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .social-links a img {
+            width: 24px;
+            height: 24px;
+            filter: brightness(0);
+            transition: filter 0.3s ease-in-out;
+        }
+
+        .social-links a:hover img {
+            filter: brightness(0.5);
+        }
+
+        
+        .mobile-menu-toggle {
+            display: none;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            height: 40px;
+            width: 40px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 1001;
+            position: relative;
+        }
+
+.mobile-menu-toggle {
+    display: none; 
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+    position: relative;
+}
+
+@media (max-width: 992px) {
+    .mobile-menu-toggle {
+        display: flex; 
+    }
+}
+
+.mobile-menu-toggle img {
+    width: 40px;
+    height: auto;
+    display: block;
+}
+
+.mobile-menu-toggle span {
+    display: none;
+    width: 30px;
+    height: 3px;
+    background: #000;
+    margin: 5px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.mobile-menu-toggle.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+        .mobile-nav {
+            position: fixed;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(255, 255, 255, 0.97);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            transition: top 0.4s ease-in-out;
+            z-index: 999;
+            border-bottom: 2px solid #ddd;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .mobile-nav.active {
+            top: 0;
+        }
+
+        .mobile-nav nav {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+        }
+
+        .mobile-nav nav a {
+            font-size: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .mobile-nav nav a:hover {
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease-in-out;
+            z-index: 998;
+        }
+
+        .overlay.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        @media (max-width: 992px) {
+            .mobile-menu-toggle {
+                display: flex;
+            }
+
+            .nav-wrapper {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">FYRRE MAGAZINE</div>
+                
+                <div class="nav-wrapper">
+                    <nav>
+                        <a href="#">Magazine</a>
+                        <a href="#">Authors</a>
+                        <a href="#">Podcast</a>
+                        <a href="#">—</a>
+                    </nav>
+                    <div class="social-links">
+                        <a href="#"><img src="/assets/images/social/instagram.png" alt="Instagram"></a>
+                        <a href="#"><img src="/assets/images/social/twitter.png" alt="Twitter"></a>
+                        <a href="#"><img src="/assets/images/social/youtube.png" alt="YouTube"></a>
+                    </div>
+                </div>
+
+                <button class="mobile-menu-toggle">
+                    <img src="/assets/images/social/Hamburger.png" alt="">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="overlay"></div>
+
+    <div class="mobile-nav">
+        <nav>
+            <a href="#">Magazine</a>
+            <a href="#">Authors</a>
+            <a href="#">Podcast</a>
+            <a href="#">—</a>
+        </nav>
+        <div class="social-links">
+            <a href="#"><img src="/assets/images/social/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="/assets/images/social/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="/assets/images/social/youtube.png" alt="YouTube"></a>
+            <a href="#">RSS</a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            const mobileNav = document.querySelector('.mobile-nav');
+            const overlay = document.querySelector('.overlay');
+
+            function closeMenu() {
+                menuToggle.classList.remove('active');
+                mobileNav.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            menuToggle.addEventListener('click', function () {
+                this.classList.toggle('active');
+                mobileNav.classList.toggle('active');
+                overlay.classList.toggle('active');
+
+                document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+            });
+
+            overlay.addEventListener('click', closeMenu);
+            document.querySelectorAll('.mobile-nav nav a').forEach(link => link.addEventListener('click', closeMenu));
+            document.addEventListener('keydown', function (event) {
+                if (event.key === "Escape") closeMenu();
+            });
+        });
+    </script>
+</body>
+</html>

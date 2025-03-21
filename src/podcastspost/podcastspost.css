@@ -1,0 +1,163 @@
+.podcast-section {
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.page-title-container {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px 0;
+    background-color: #ffffff;
+}
+
+.podcast-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.podcast-item {
+    display: flex;
+    position: relative;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 40px;
+    transition: transform 0.3s ease;
+}
+
+.podcast-item:hover {
+    transform: translateX(5px);
+}
+
+.episode-number {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+}
+
+.podcast-image {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    margin-left: 60px;
+}
+
+.podcast-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.podcast-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    color: #000;
+}
+
+.podcast-meta {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.meta-label {
+    font-size: 14px;
+    color: #666;
+}
+
+.meta-value {
+    font-size: 14px;
+    color: #000;
+}
+
+.listen-button {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease;
+    margin-left: auto;
+}
+
+.listen-button:hover {
+    color: #777;
+}
+
+.arrow {
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+@media (max-width: 920px) {
+    .podcast-item {
+        flex-direction: column;
+    }
+    
+    .podcast-image {
+        margin-left: 0;
+        margin-top: 40px;
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+    
+    .podcast-content {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+    
+    .episode-number {
+        position: relative;
+        transform: none;
+        margin-bottom: 10px;
+        top: 0;
+    }
+    
+    .podcast-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .listen-button {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .podcast-container {
+        gap: 30px;
+    }
+    
+    .podcast-item {
+        padding-bottom: 30px;
+    }
+    
+    .podcast-title {
+        font-size: 20px;
+    }
+    
+    .episode-number {
+        font-size: 24px;
+    }
+}
