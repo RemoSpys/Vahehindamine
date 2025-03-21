@@ -18,13 +18,15 @@
     justify-content: space-between;
     align-items: center;
     margin: 20px 0;
+    
 }
 
 .back-link {
+    font-size: 16px;
+    font-weight: 500;
     text-decoration: none;
     color: #000;
-    font-size: 14px;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .section-indicator {
@@ -77,6 +79,8 @@ blockquote {
 
 .latest-posts {
     margin-top: 80px;
+    border-top: 1px solid #ccc;
+    padding: 30px;
 }
 
 .latest-posts-header {
@@ -158,6 +162,7 @@ blockquote {
     font-size: 14px;
     color: #666;
     flex-wrap: wrap;
+    margin-top: 10px;
 }
 /* 🔹 Article Meta - ONE ROW */
 /* 🔹 Meta Text Styling */
@@ -276,12 +281,14 @@ blockquote {
     display: flex;
     align-items: center;
     gap: 10px;
+    color: black;
 }
 
 .social-icons img {
     width: 18px;
     height: 18px;
     transition: opacity 0.3s ease;
+    background: gray;
 }
 
 .social-icons img:hover {

@@ -63,7 +63,9 @@
         }
 
         .main-title h1 {
-            font-size: 120px;
+            display: flex;
+            justify-content: center;
+            font-size: 240px;
             font-weight: 900;
             line-height: 1;
             margin-bottom: 20px;
@@ -136,7 +138,6 @@
 
         .authors-section {
             margin: 120px 0;
-            border-bottom: 2px solid #ccc;
             padding-bottom: 80px;
         }
 
@@ -488,6 +489,11 @@
             text-align: center;
             margin-top: 40px;
             padding-top: 20px;
+        } 
+
+        .view-all-articles-btn {
+            margin-top: 40px;
+            padding-top: 20px;
         }
 
         .all-articles-btn {
@@ -499,7 +505,6 @@
             text-transform: uppercase;
             text-decoration: none;
             color: #000;
-            border: 2px solid #000;
             padding: 12px 20px;
             border-radius: 30px;
             transition: all 0.3s ease;
@@ -713,7 +718,7 @@
 
         @media (max-width: 480px) {
             .main-title h1 {
-                font-size: 36px;
+                font-size: 60px;
             }
             
             .section-header h2 {
