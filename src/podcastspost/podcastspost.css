@@ -4,19 +4,31 @@
     box-sizing: border-box;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .back-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
     margin: 20px 0;
+
 }
 
 .back-link {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 500;
     text-decoration: none;
     color: #000;
+    font-weight: bold;
+}
+
+.section-indicator {
+    font-weight: bold;
+    font-size: 14px;
 }
 
 .section-indicator h1 {
@@ -253,24 +265,25 @@ nav ul li a:hover, nav ul li a.active {
     border-top: 1px solid #4d4c4c;
 }
 
-.section-header {
+.back-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 40px;
+    margin: 20px 0;
+
 }
 
-.section-header h2 {
-    font-size: 38px;
-    font-weight: 700;
-}
-
-.all-episodes-link {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 14px;
+.back-link {
+    font-size: 16px;
     font-weight: 500;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.section-indicator {
+    font-weight: bold;
+    font-size: 14px;
 }
 
 .episodes-grid {
